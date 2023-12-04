@@ -1,8 +1,8 @@
-console.log('hey there')
+console.log('hey there') 
 
+if (window.innerWidth >= 765) {alert('Activate mobile view');}
 
 let hamburger = document.querySelector('.hamburger');
-console.log(hamburger)
 
 let dropdownMenu = document.querySelector('.mobile-nav');
 
