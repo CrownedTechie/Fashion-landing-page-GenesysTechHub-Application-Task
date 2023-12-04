@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.mobile-nav, .hamburger {
+    display: none;
+}
+
+body {
+    height: 100vh;
+    background-color: #f6f6f6;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding-top: 2.5rem;
+}
+
+.big-container {
+    background-color: white;
+    width: 98%;
+    max-width: 90rem;
+    height: 45rem;
+    margin:auto;
+}
+
+/* ...STYLING THE HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+}
+
+.links a, .login {
+    color: black;
+}
+
+.links {
+    display: flex;
+   gap: 3rem;
+}
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.signup-btn {
+    display: inline;
+    font: inherit;
+    width: 7.5rem;
+    line-height: 2.5;
+    border-radius: .7rem;
+    border: none;
+    background-color: #ff8e24;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.signup-btn:hover {
+    background-color: orange;
+    color: black;
+}
+
+.hamburger {
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 27px; height: 2px; 
+    margin: 5px 0;
+    background: black;
+}
+
+
+/* ....STYLING THE CONTENT */
+.small-container {
+    width: 86%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+.content {
+    width: 27rem;
+    line-height: 1.8;
+   padding: 0 1rem;
+
+}
+
+.content h2 {
+    font-size: 1rem;
+    color: rgb(23, 234, 234);
+}
+
+.content p {
+    font-size: 1.8rem;
+    padding-right: 3rem;
+    letter-spacing: .1rem;
+   
+}
+
+.buy-btn {
+    width: 6.2rem;
+    line-height: 2.5;
+    border-radius: .7rem;
+    border: none;
+    background-color: #ff8e24;
+    color: white; 
+    margin-top: 1.8rem;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background-color: orange;
+    color: black;
+}
+
+.denim-photo {
+    max-width: 100%;
+    width: 26rem;
+}
+
+
+/* ...MEDIA QUERIES.. */
+@media screen and (max-width: 1030px) {
+    header {
+        padding: 1rem 3rem;
+    }
+
+    .signup {
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .links {
+        gap: 1.6rem;
+    }
+
+    .signup{
+        gap: .8rem;
+    }
+
+    .denim-photo {
+        width: 24rem;
+    }
+}
+
+@media screen and (max-width: 809px) {
+    .links {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .links, .signup, .denim-photo {
+        display: none
+    }
+    
+    body {
+        background-image: url('img/man.png');
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat:no-repeat;
+    padding-top: 0;
+    }
+
+    .big-container {
+        background-color: transparent;
+    }
+
+    header {
+        width: 100%; height: 4.5rem;
+        padding: 0 1.5rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+        letter-spacing: .23rem;
+    }
+
+    .mobile-nav {
+        position: absolute;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        background: rgba(253, 143, 40, 0.8);
+        text-align: center;
+        display: none;
+    }
+    .mobile-nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-links a {
+        display: inline-block;
+        padding: 5px 0;
+        margin: 5px 0;
+        border: 3px solid transparent;
+        color: black;
+        transition: 0.2s;
+        text-transform: uppercase;
+    }
+
+    .mobile-links a:hover {
+        border-bottom-color: black;
+        color: white;
+    }
+    .signup-link {
+        box-shadow: 0 2px 15px 5px ;
+        width: 100%;
+        border-radius: 1rem;
+    }
+
+    .hamburger {
+        display: block;
+       }
+
+    .small-container {
+        padding: 10rem .1rem;
+    }
+
+    .content p {
+        font-size: 1.5rem;
+        text-wrap: wrap;
+        line-height: 2rem;
+        padding-top: .5rem;
+       padding-right: 7.8rem;
+    }
+
+    .buy-btn {
+        width: 7.5rem;
+        color: whitesmoke;
+        font-size: 1.1rem;
+        margin-top: 1rem;
+    }
+}

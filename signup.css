@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg,
+    #ca9138, #b0313a );
+    /* af3437  */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    height: 100vh; 
+    padding: 2rem 4.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.exit {
+    max-width: 100%;
+    width: 1.2rem;
+    float: right;
+    display: flex;
+    align-self: flex-end;
+}
+
+.container {
+    width: 66%;
+    display: flex;
+    max-width: 90rem;
+    min-width: 18.75rem;
+    height:36rem;
+    margin: auto;
+}
+
+.contact {
+    width: 50%;
+    background-color: white;
+    border-radius: 1rem 0 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 3rem;
+}
+
+.orange {
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.logo {
+    max-width: 100%;
+    width: 2rem;
+    height: auto;
+    margin-bottom: .7rem;
+}
+
+.contact p {
+    font-size: .8rem;
+    margin: .2rem 0;
+    text-align: center;
+}
+
+
+
+.contact button {
+    width: 100%;
+    line-height: 3;
+    border-radius: 1.5rem;
+    border: .1rem solid black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: -.5rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.socials {
+    max-width: 100%;
+    width: 1.26rem;
+    height: auto;
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 1200px){
+    body {
+        padding: 1.5rem 0rem;
+    }
+    .contact button {
+        gap: 0.5rem;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+    .orange {
+        display: none;
+    }
+    .contact {
+        width: 100%;
+        border-radius: 1rem;
+    }
+} 
+
+ @media screen and (min-width: 573px) and (max-width: 599px) {
+    .orange {
+        display: none;
+    }
+    .contact {
+        width: 100%;
+        border-radius: 1rem;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 573px) {
+    .orange {
+        display: none;
+    }
+    .contact {
+        width: 100%;
+        border-radius: 1rem;
+    } 
+} 
